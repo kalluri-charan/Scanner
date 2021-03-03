@@ -4,14 +4,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Run `npm install -g json-server`
 
-###Install all the required packages with `npm install`
+### Install all the required packages with `npm install`
 
 ## Available Scripts
 
 In the project directory, you can run:
 
 ### `json-server --watch db.js`
-To runs the local server Open [http://localhost:3000/product](http://localhost:3000/product)
+Runs the local server Open [http://localhost:3000/product](http://localhost:3000/product)
 Note: should run this for the application to work 
 
 ### `yarn start`
