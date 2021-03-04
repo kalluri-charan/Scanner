@@ -34,7 +34,7 @@ export default function TotalDialog({totalProductsValue}) {
     return (
         <>
             <div className={classes.checkOutSection}>
-                <Button variant="contained" color="secondary" onClick={handleClickOpen}>
+                <Button variant="contained" color="secondary" onClick={handleClickOpen} id={"checkOut"}>
                     Check Out
                 </Button>
             </div>
@@ -48,11 +48,13 @@ export default function TotalDialog({totalProductsValue}) {
                 <DialogTitle id="alert-dialog-title" className={classes.dialogTotal}>Your Total Cost</DialogTitle>
                 <DialogContent>
                     <DialogContentText id="alert-dialog-description" className={classes.dialogTotal}>
-                        Total Cost is $ {totalProductsValue}
+                        <span id={'totalCost'}>
+                            Total Cost is $ {totalProductsValue}
+                        </span>
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
-                    <Button onClick={handleClose} color="secondary" autoFocus variant="contained">
+                    <Button onClick={handleClose} color="secondary" autoFocus variant="contained" data-testid="closeButton">
                         Close
                     </Button>
                 </DialogActions>
